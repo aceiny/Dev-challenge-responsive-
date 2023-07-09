@@ -5,11 +5,14 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+body {
+    height: 100vh;
+}
 .container { 
     display : flex;
     flex-direction : column ; 
     justify-content: space-between;
-    height: 100vh;
+    height: 100%;
 
 }
 header{
