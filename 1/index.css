@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.container { 
+    display : flex;
+    flex-direction : column ; 
+    justify-content: space-between;
+    height: 100vh;
+
+}
+header{
+    display: flex;
+    justify-content: start;
+    width: fit-content;
+    padding: 30px 0 0 70px;
+}
+header p{
+    font-family: "Inconsolata";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: -0.08em;
+    text-align: left;
+    color: #333333;
+    text-transform : uppercase;
+
+}
+.text-info{
+    display : flex;
+    justify-content : center;
+    gap: 7%;
+    width: 100%;
+} 
+.info-text{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    justify-content: start;
+}
+.info-text h1{
+    font-family: "Space Mono";
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 95px;
+    letter-spacing: -0.035em;
+    text-align: left;    
+    color: #333333;
+    max-width: 586px;
+
+}
+.info-text p {
+    font-family: "Space Mono";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: -0.035em;
+    color: #4F4F4F;
+    max-width : 381px;
+}
+.info-text button {
+    width: 216px;
+    height: 68px;
+    text-align: center;
+    background-color: #333333;
+    color : white;
+    font-family: "Space Mono";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: -0.035em;
+    text-transform : uppercase;
+    outline: none;
+    border: none;
+}
+.scarecrow-image img {
+    max-width: 539px;
+}
+footer{
+    display : flex;
+    justify-content : center ; 
+    align-items : center;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    color: #BDBDBD;
+    justify-content: center;
+    padding-bottom: 25px;
+    
+}
+footer p {
+    font-weight: 500;
+}
+.spanp1{
+    font-weight: 700;
+}
+.spanp2 {
+    font-weight: 600;
+}
+@media  (max-width : 856px){
+    header {
+        padding: 5% 0 0 10%;
+    }
+    .text-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+    .info-text{
+        margin-left: 25px;
+    }
+    .text-info img{
+        width: 286.829833984375px;
+        height: 238.00001525878906px;
+
+    }
+    .info-text h1{
+        font-size: 48px;
+        width: 350px;
+    }
+    .info-text p{
+        font-size: 18px;
+        width: 350px;
+    }
+}
