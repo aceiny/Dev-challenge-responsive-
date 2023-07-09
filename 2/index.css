@@ -172,7 +172,7 @@ footer p {
     }
     .all-cards{
         min-width: 150px;
-        padding: 0 30px;
+        padding: 0 auto;
         margin : 0 auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
