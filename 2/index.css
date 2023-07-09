@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500;600;700&family=PT+Serif:wght@400;700&family=Poppins:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body { 
+    height: 1480px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    gap: 40px;
+}
+header {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    width: 60%;
+    gap: 60px;
+}
+header div { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 60%;
+}
+header h1 {
+    font-family: "PT Serif";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.045em;
+
+}
+header div span {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.firstp{
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    max-width: 117px;
+    text-transform: uppercase;
+
+}
+.secondp{
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    max-width: 430px;
+
+}
+.all-cards{
+    width: 1120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 130px;
+    margin-bottom: 90px;
+    width: 60%;
+    min-width: 800px;
+}
+.one-card {
+    display: flex;
+    max-width: 264px;
+    align-items: flex-start;
+    justify-content: start;
+}
+.big {
+    position: relative;
+    top: 20%;
+}
+.one-card img {
+    border-radius: 5px;
+}
+.left-side{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 14px;
+}
+.left-side img {
+    max-width: 236px;
+}
+.left-side p {
+    font-family: "poppins";
+    font-size: clamp(18px, 15px, 14px);
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: capitalize;
+    
+}
+.right-side p{
+    transform-origin: top left; 
+    position: absolute;
+    transform: rotate(-90deg) translate(-100%,10%);
+    white-space: nowrap;
+    font-family: "PT Serif";
+    font-size: clamp(12px,11px,10px);
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+
+}
+footer{
+    display : flex;
+    width: fit-content;
+    justify-content : center ; 
+    align-items : center;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    color: #BDBDBD;
+    justify-content: center;
+    padding-bottom: 25px;
+    
+}
+footer p {
+    font-weight: 500;
+}
+.spanp1{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.spanp2 {
+    font-weight: 600;
+}
+@media (width < 1340px) {
+    header{
+        width: 876px
+    }
+}
+@media (width < 1216px) {
+    header {
+        width: 80%;
+    }
+}
+@media (width < 850px) {
+    header {
+        justify-content: start;
+        gap: 20px;
+        padding: 0 15px;
+        width: 100%;
+    }
+    header{
+        width: 100%;
+        display: grid;
+        grid-row: 5fr 5fr;
+    }
+    header p{
+        font-size: 14px;
+    }
+    .all-cards{
+        min-width: 150px;
+        padding: 0 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .one-card{
+        width: fit-content;
+    }
+    .all-cards img{
+        width: 210px
+    }
+    .all-cards .one-card {
+        width: fit-content;
+    }
+
+    .big {
+        top: 0;
+    }
+    .small {
+        position: relative;
+        top: 30%;
+    }
+}
+@media (width < 550px){
+    .all-cards img {
+        width: 138px;
+    }
+    .all-cards{
+        padding: 0 3px;}
+}
