@@ -173,11 +173,10 @@ footer p {
     .all-cards{
         min-width: 150px;
         padding: 0 30px;
+        margin : 0 auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
         width: 100%;
-        align-items: center;
-        justify-content: center;
     }
     .one-card{
         width: fit-content;
